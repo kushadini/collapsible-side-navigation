@@ -1,0 +1,95 @@
+:root{
+    --color-purple-dark: #441752;
+    --color-purple-light: #cac6d4;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.material-symbols-outlined{
+    
+  font-size: 60px;
+  color: var(--color-purple-light)
+
+}
+
+body{
+    display: flex;
+    font-family: "Open Sans", serif;
+    color: black;
+}
+
+main{
+    padding: 20px;
+    padding-left: 100px;
+}
+
+h1{
+    color: var(--color-purple-dark);
+}
+
+.side-bar>.material-symbols-outlined{
+    font-size: 30px;
+}
+
+
+
+.nav-title{
+    font-family: "Open Sans", serif;
+    color: var(--color-purple-light);
+    font-size: 16pt;
+    padding-left: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.side-bar{
+    width: 250px;
+    height: 100vh;
+    background-color: var(--color-purple-dark);
+    padding: 20px;
+    position: relative;
+    transition: width 0.5s ease;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -ms-transition: width 0.5s ease;
+    -o-transition: width 0.5s ease;
+}
+
+.side-bar-close{
+    width: 100px;
+}
+
+.collapsed-nav-title{
+    display: none;
+    padding-left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+
+.arrow{
+    position: absolute;
+    right: 10px;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav-options{
+    margin-top: 50px;
+}
+
+.rotate-arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
